@@ -1,0 +1,127 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-family: "Montserrat", sans-serif;
+	height: 100vh;
+	color: #fff;
+	background-color: #eeedec;
+}
+
+.wrapper {
+	width: 800px;
+	padding: 20px 40px;
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 2px solid black;
+	border-radius: 25px;
+}
+
+.dropdown {
+	font-size: 20px;
+	padding: 5px 10px;
+	width: 60%;
+}
+
+h1 {
+	text-align: center;
+	padding: 10px;
+}
+
+input {
+	font-size: 20px;
+	padding: 5px 10px;
+	margin-top: 10px;
+	background: none;
+	border: none;
+	color: #fff;
+	border-bottom: 2px solid #ddd;
+}
+
+input::placeholder {
+	color: #ddd;
+	font-family: "Montserrat", sans-serif;
+}
+
+.bottom-section {
+	height: 140px;
+}
+
+.main-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 200px;
+}
+
+.city-name {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+.headings,
+.weather-info {
+	display: flex;
+	align-items: center;
+}
+
+.headings p,
+.weather-info p {
+	width: 33.3%;
+	text-align: center;
+}
+
+.headings {
+	height: 35%;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.weather-info {
+	height: 65%;
+	font-size: 26px;
+}
+
+/* .warning {
+	margin-top: 10px;
+	font-size: 14px;
+	color: tomato;
+} */
+
+/* --------------------------------------------------------------------- */
+.custom-dropdown {
+	position: relative;
+	display: inline-block;
+	user-select: none;
+}
+
+.city-list {
+	display: none;
+	position: absolute;
+	background-color: #000;
+	border: 1px solid #ccc;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	max-height: 150px;
+	overflow-y: auto;
+}
+
+li {
+	padding: 10px;
+	cursor: pointer;
+}
+
+li:hover {
+	background-color: #f0f0f0;
+}

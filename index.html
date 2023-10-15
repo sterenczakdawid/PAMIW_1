@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Weather App</h1>
+    <div class="main-info">
+
+      <h3 class="city-name"></h3>
+      <!-- <p class="warning"></p> -->
+      <div class="custom-dropdown">
+        <input type="text" id="city-input" placeholder="Wprowadź miasto">
+        <ul class="city-list" id="city-list">
+          <!-- Elementy zostaną dodane tutaj -->
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div>
+      <div class="bottom-section">
+        <div class="headings">
+          <p>Teraz:</p>
+          <p>Za godzinę:</p>
+          <p>Za 12 godzin:</p>
+        </div>
+        <div class="weather-info">
+          <p class="current"></p>
+          <p class="one-hour"></p>
+          <p class="twelve-hours"></p>
+        </div>
+      </div>
+
+      <div class="bottom-section">
+        <div class="headings">
+          <p>Jutro:</p>
+          <p>Za 5 dni:</p>
+          <p>Wczoraj:</p>
+        </div>
+        <div class="weather-info">
+          <p class="tomorrow"></p>
+          <p class="five-days"></p>
+          <p class="yesterday"></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
